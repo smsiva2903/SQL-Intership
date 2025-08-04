@@ -31,7 +31,7 @@ The system tracks which students attend which classes on which dates, and who te
 
 ---
 
-## 📋 Sample SQL Queries
+##  Sample SQL Queries
 
 ###  SELECT * FROM Student;
 
