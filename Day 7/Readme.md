@@ -14,8 +14,11 @@ Stores information about students.
 Column	      Type      	 Description
 
 student_id	  INT (PK)	     Unique ID for each student
+
 name	      VARCHAR(100)	 Student's name
+
 email	      VARCHAR(100)	 Student's email
+
 department	  VARCHAR(50) 	 Department name
 
 2. Faculty Table
@@ -25,8 +28,11 @@ Stores information about faculty members.
 Column	      Type	         Description
 
 faculty_id	  INT (PK)	     Unique ID for each faculty
+
 name	      VARCHAR(100)	 Faculty's name
+
 email	      VARCHAR(100)	 Faculty's email
+
 department	  VARCHAR(50)	 Department name
 
 3. Course Table
@@ -36,7 +42,9 @@ Stores information about courses offered.
 Column	       Type	         Description
 
 course_id	   INT (PK)	     Unique ID for each course
+
 course_name    VARCHAR(100)	 Name of the course
+
 faculty_id	   INT (FK)	     Links to Faculty(faculty_id)
 
 4. Attendance Table
@@ -46,9 +54,13 @@ Stores daily attendance records for students.
 Column	        Type	    Description
 
 attendance_id	INT (PK)	Unique ID for each attendance record
+
 student_id	    INT (FK)	Links to Student(student_id)
+
 course_id	    INT (FK)	Links to Course(course_id)
+
 date	        DATE	    Date of the attendance
+
 status	        ENUM	    Present / Absent
 
 ##  Views in the Project
@@ -118,3 +130,4 @@ SELECT * FROM DailyAttendanceSummary;
 SELECT * FROM PythonFullAttendees;
 
 SELECT * FROM CourseAvgAttendance
+
